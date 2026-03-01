@@ -18,6 +18,9 @@ import { GuaranteeSection } from '@/components/sections/GuaranteeSection';
 import { WhereToBuySection } from '@/components/sections/WhereToBuySection';
 import { FAQSection } from '@/components/sections/FAQSection';
 import { CTASection } from '@/components/sections/CTASection';
+import { QuizSection } from '@/components/sections/QuizSection';
+import { BMICalculatorSection } from '@/components/sections/BMICalculatorSection';
+import { BeforeAfterSection } from '@/components/sections/BeforeAfterSection';
 import { ContactDialog } from '@/components/modals/ContactDialog';
 
 function App() {
@@ -31,11 +34,14 @@ function App() {
       <main>
         <HeroSection onOpenDialog={openDialog} />
         <StatsSection />
+        <QuizSection onOpenDialog={openDialog} />
         <BenefitsSection />
         <HowItWorksSection />
         <ComparisonSection />
         <DosagesSection onOpenDialog={openDialog} />
+        <BeforeAfterSection />
         <TestimonialsSection />
+        <BMICalculatorSection onOpenDialog={openDialog} />
         <PricingSection onOpenDialog={openDialog} />
         <GuaranteeSection />
         <WhereToBuySection />

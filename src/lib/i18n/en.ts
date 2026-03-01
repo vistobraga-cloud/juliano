@@ -352,6 +352,87 @@ export const en: Translations = {
     privacy: 'Your data is used only for contact purposes. We do not share with third parties.',
   },
 
+  quiz: {
+    badge: 'Find Your Plan',
+    title: 'What is the ideal treatment for you?',
+    subtitle: 'Answer a few quick questions and discover the best personalized option.',
+    steps: [
+      {
+        question: 'What is your weight loss goal?',
+        options: [
+          'Lose 1-20 lbs for good',
+          'Lose 21-50 lbs for good',
+          'Lose over 50 lbs for good',
+          'Maintain my weight and get fit',
+          "Haven't decided",
+        ],
+      },
+      {
+        question: 'Have you tried weight loss medication before?',
+        options: [
+          'Yes, with positive results',
+          'Yes, but without results',
+          'No, never tried',
+        ],
+      },
+      {
+        question: 'Do you have any medical conditions?',
+        options: [
+          'Type 2 diabetes',
+          'Pre-diabetes',
+          'High cholesterol or hypertension',
+          'No diagnosed conditions',
+        ],
+      },
+      {
+        question: 'What is your age range?',
+        options: [
+          '18 to 30 years',
+          '31 to 45 years',
+          '46 to 60 years',
+          'Over 60 years',
+        ],
+      },
+    ],
+    back: 'Back',
+    next: 'Next',
+    stepOf: 'Step {current} of {total}',
+    resultTitle: 'Your personalized plan is ready!',
+    resultSubtitle: 'Based on your answers, Tirzepatide is an excellent option for you.',
+    resultBmi: 'Your BMI',
+    resultGoal: 'Goal',
+    resultPlan: 'Recommended plan',
+    resultCta: 'Talk to a Specialist',
+    resultWhatsApp: 'I want to know more about personalized treatment',
+  },
+
+  bmi: {
+    badge: 'BMI Calculator',
+    title: 'Check your BMI',
+    subtitle: 'Discover your Body Mass Index and find out if Tirzepatide may be right for you.',
+    heightLabel: 'Height',
+    weightLabel: 'Weight',
+    calculate: 'Calculate BMI',
+    yourBmi: 'Your BMI',
+    underweight: 'Underweight',
+    normal: 'Normal weight',
+    overweight: 'Overweight',
+    obese: 'Obese',
+    recommendation: 'Tirzepatide can help you reach and maintain a healthy weight. Talk to a specialist.',
+    cta: 'Talk to a Specialist',
+  },
+
+  beforeAfter: {
+    badge: 'Real Results',
+    title: 'Transformations with Tirzepatide',
+    subtitle: 'See real results from patients who started treatment with Tirzepatide.',
+    before: 'Before',
+    after: 'After',
+    lost: 'Lost',
+    inTime: 'in',
+    disclaimer: 'Individual results may vary. Illustrative photos. Treatment should be supervised by a healthcare professional.',
+  },
+
   floatingWhatsApp: 'Chat on WhatsApp',
   stickyBtn: 'Specialist',
   stickyWhatsApp: 'WhatsApp',

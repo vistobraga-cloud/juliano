@@ -203,6 +203,56 @@ export interface Translations {
     privacy: string;
   };
 
+  // Quiz Funnel
+  quiz: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    steps: {
+      question: string;
+      options: string[];
+    }[];
+    back: string;
+    next: string;
+    stepOf: string;
+    resultTitle: string;
+    resultSubtitle: string;
+    resultBmi: string;
+    resultGoal: string;
+    resultPlan: string;
+    resultCta: string;
+    resultWhatsApp: string;
+  };
+
+  // BMI Calculator
+  bmi: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    heightLabel: string;
+    weightLabel: string;
+    calculate: string;
+    yourBmi: string;
+    underweight: string;
+    normal: string;
+    overweight: string;
+    obese: string;
+    recommendation: string;
+    cta: string;
+  };
+
+  // Before / After Gallery
+  beforeAfter: {
+    badge: string;
+    title: string;
+    subtitle: string;
+    before: string;
+    after: string;
+    lost: string;
+    inTime: string;
+    disclaimer: string;
+  };
+
   // Floating / Sticky
   floatingWhatsApp: string;
   stickyBtn: string;

@@ -20,6 +20,14 @@ export interface RegionalData {
   guaranteeItems: { title: string; description: string }[];
   guaranteePaymentTitle: string;
   guaranteePaymentSubtitle: string;
+  beforeAfterResults: {
+    name: string;
+    age: number;
+    before: string;
+    after: string;
+    lost: string;
+    duration: string;
+  }[];
 }
 
 // Dados regionais para cada combinação idioma × região
@@ -69,6 +77,12 @@ const data: Record<Language, Record<Region, RegionalData>> = {
       ],
       guaranteePaymentTitle: 'Formas de pagamento',
       guaranteePaymentSubtitle: 'Visa, Mastercard, Amex, PIX, Boleto — parcelamento em até 12x',
+      beforeAfterResults: [
+        { name: 'Juliana', age: 34, before: '98 kg', after: '78 kg', lost: '20 kg', duration: '4 meses' },
+        { name: 'Roberto', age: 45, before: '112 kg', after: '89 kg', lost: '23 kg', duration: '5 meses' },
+        { name: 'Camila', age: 29, before: '85 kg', after: '68 kg', lost: '17 kg', duration: '3 meses' },
+        { name: 'Marcos', age: 52, before: '105 kg', after: '84 kg', lost: '21 kg', duration: '6 meses' },
+      ],
     },
     us: {
       brandName: 'Zampieri MedSpa',
@@ -115,6 +129,12 @@ const data: Record<Language, Record<Region, RegionalData>> = {
       ],
       guaranteePaymentTitle: 'Formas de pagamento',
       guaranteePaymentSubtitle: 'Visa, Mastercard, Amex — pagamento seguro online',
+      beforeAfterResults: [
+        { name: 'Ana', age: 31, before: '91 kg', after: '72 kg', lost: '19 kg', duration: '4 meses' },
+        { name: 'Carlos', age: 40, before: '108 kg', after: '86 kg', lost: '22 kg', duration: '5 meses' },
+        { name: 'Fernanda', age: 27, before: '82 kg', after: '66 kg', lost: '16 kg', duration: '3 meses' },
+        { name: 'Diego', age: 48, before: '115 kg', after: '92 kg', lost: '23 kg', duration: '6 meses' },
+      ],
     },
   },
   en: {
@@ -162,6 +182,12 @@ const data: Record<Language, Record<Region, RegionalData>> = {
       ],
       guaranteePaymentTitle: 'Payment methods',
       guaranteePaymentSubtitle: 'Visa, Mastercard, Amex, PIX, Bank Slip — up to 12 installments',
+      beforeAfterResults: [
+        { name: 'Juliana', age: 34, before: '216 lbs', after: '172 lbs', lost: '44 lbs', duration: '4 months' },
+        { name: 'Roberto', age: 45, before: '247 lbs', after: '196 lbs', lost: '51 lbs', duration: '5 months' },
+        { name: 'Camila', age: 29, before: '187 lbs', after: '150 lbs', lost: '37 lbs', duration: '3 months' },
+        { name: 'Marcos', age: 52, before: '231 lbs', after: '185 lbs', lost: '46 lbs', duration: '6 months' },
+      ],
     },
     us: {
       brandName: 'Zampieri MedSpa',
@@ -208,6 +234,12 @@ const data: Record<Language, Record<Region, RegionalData>> = {
       ],
       guaranteePaymentTitle: 'Payment methods',
       guaranteePaymentSubtitle: 'Visa, Mastercard, Amex — secure online payment',
+      beforeAfterResults: [
+        { name: 'Jenny', age: 25, before: '200 lbs', after: '170 lbs', lost: '30 lbs', duration: '3 months' },
+        { name: 'Michael', age: 38, before: '240 lbs', after: '195 lbs', lost: '45 lbs', duration: '5 months' },
+        { name: 'Sarah', age: 32, before: '185 lbs', after: '152 lbs', lost: '33 lbs', duration: '4 months' },
+        { name: 'David', age: 44, before: '220 lbs', after: '178 lbs', lost: '42 lbs', duration: '6 months' },
+      ],
     },
   },
   es: {
@@ -255,6 +287,12 @@ const data: Record<Language, Record<Region, RegionalData>> = {
       ],
       guaranteePaymentTitle: 'Formas de pago',
       guaranteePaymentSubtitle: 'Visa, Mastercard, Amex, PIX, Boleta — hasta 12 cuotas',
+      beforeAfterResults: [
+        { name: 'Juliana', age: 34, before: '98 kg', after: '78 kg', lost: '20 kg', duration: '4 meses' },
+        { name: 'Roberto', age: 45, before: '112 kg', after: '89 kg', lost: '23 kg', duration: '5 meses' },
+        { name: 'Camila', age: 29, before: '85 kg', after: '68 kg', lost: '17 kg', duration: '3 meses' },
+        { name: 'Marcos', age: 52, before: '105 kg', after: '84 kg', lost: '21 kg', duration: '6 meses' },
+      ],
     },
     us: {
       brandName: 'Zampieri MedSpa',
@@ -301,6 +339,12 @@ const data: Record<Language, Record<Region, RegionalData>> = {
       ],
       guaranteePaymentTitle: 'Formas de pago',
       guaranteePaymentSubtitle: 'Visa, Mastercard, Amex — pago seguro online',
+      beforeAfterResults: [
+        { name: 'Jenny', age: 25, before: '200 lbs', after: '170 lbs', lost: '30 lbs', duration: '3 meses' },
+        { name: 'Michael', age: 38, before: '240 lbs', after: '195 lbs', lost: '45 lbs', duration: '5 meses' },
+        { name: 'Sarah', age: 32, before: '185 lbs', after: '152 lbs', lost: '33 lbs', duration: '4 meses' },
+        { name: 'David', age: 44, before: '220 lbs', after: '178 lbs', lost: '42 lbs', duration: '6 meses' },
+      ],
     },
   },
 };

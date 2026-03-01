@@ -352,6 +352,87 @@ export const pt: Translations = {
     privacy: 'Seus dados são usados apenas para entrar em contato. Não compartilhamos com terceiros.',
   },
 
+  quiz: {
+    badge: 'Descubra seu Plano',
+    title: 'Qual é o tratamento ideal para você?',
+    subtitle: 'Responda algumas perguntas rápidas e descubra a melhor opção personalizada.',
+    steps: [
+      {
+        question: 'Qual é o seu objetivo de perda de peso?',
+        options: [
+          'Perder de 1 a 10 kg',
+          'Perder de 10 a 25 kg',
+          'Perder mais de 25 kg',
+          'Manter meu peso e melhorar a saúde',
+          'Ainda não decidi',
+        ],
+      },
+      {
+        question: 'Você já usou algum medicamento para emagrecimento antes?',
+        options: [
+          'Sim, com resultados positivos',
+          'Sim, mas sem resultados',
+          'Não, nunca usei',
+        ],
+      },
+      {
+        question: 'Você tem alguma condição médica?',
+        options: [
+          'Diabetes tipo 2',
+          'Pré-diabetes',
+          'Colesterol alto ou hipertensão',
+          'Nenhuma condição diagnosticada',
+        ],
+      },
+      {
+        question: 'Qual é a sua faixa etária?',
+        options: [
+          '18 a 30 anos',
+          '31 a 45 anos',
+          '46 a 60 anos',
+          'Acima de 60 anos',
+        ],
+      },
+    ],
+    back: 'Voltar',
+    next: 'Próximo',
+    stepOf: 'Passo {current} de {total}',
+    resultTitle: 'Seu plano personalizado está pronto!',
+    resultSubtitle: 'Com base nas suas respostas, o Tirzepatide é uma excelente opção para você.',
+    resultBmi: 'Seu IMC',
+    resultGoal: 'Objetivo',
+    resultPlan: 'Plano recomendado',
+    resultCta: 'Falar com Especialista',
+    resultWhatsApp: 'Quero saber mais sobre o tratamento personalizado',
+  },
+
+  bmi: {
+    badge: 'Calculadora de IMC',
+    title: 'Calcule seu IMC',
+    subtitle: 'Descubra seu Índice de Massa Corporal e entenda se o Tirzepatide pode ser indicado para você.',
+    heightLabel: 'Altura',
+    weightLabel: 'Peso',
+    calculate: 'Calcular IMC',
+    yourBmi: 'Seu IMC',
+    underweight: 'Abaixo do peso',
+    normal: 'Peso normal',
+    overweight: 'Sobrepeso',
+    obese: 'Obesidade',
+    recommendation: 'O Tirzepatide pode ajudar a alcançar e manter um peso saudável. Fale com um especialista.',
+    cta: 'Falar com Especialista',
+  },
+
+  beforeAfter: {
+    badge: 'Resultados Reais',
+    title: 'Transformações com Tirzepatide',
+    subtitle: 'Veja os resultados reais de pacientes que iniciaram o tratamento com Tirzepatide.',
+    before: 'Antes',
+    after: 'Depois',
+    lost: 'Perdeu',
+    inTime: 'em',
+    disclaimer: 'Resultados individuais podem variar. Fotos ilustrativas. Tratamento deve ser acompanhado por profissional de saúde.',
+  },
+
   floatingWhatsApp: 'Falar pelo WhatsApp',
   stickyBtn: 'Especialista',
   stickyWhatsApp: 'WhatsApp',
