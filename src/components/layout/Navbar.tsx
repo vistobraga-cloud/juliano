@@ -13,13 +13,8 @@ const LANGS: { code: Language; flag: string }[] = [
   { code: 'es', flag: 'ES' },
 ];
 
-const REGIONS = [
-  { code: 'br' as const, flag: '🇧🇷' },
-  { code: 'us' as const, flag: '🇺🇸' },
-];
-
 export function Navbar({ onOpenDialog }: NavbarProps) {
-  const { t, r, language, region, setLanguage, setRegion } = useTranslation();
+  const { t, r, language, setLanguage } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -75,22 +70,7 @@ export function Navbar({ onOpenDialog }: NavbarProps) {
             ))}
           </div>
 
-          <div className="hidden lg:flex items-center gap-2">
-            <div className="flex items-center rounded-lg overflow-hidden border border-white/20">
-              {REGIONS.map(({ code, flag }) => (
-                <button
-                  key={code}
-                  onClick={() => setRegion(code)}
-                  className={`px-2 py-1.5 text-sm transition-colors ${
-                    region === code
-                      ? 'bg-white/20 font-semibold'
-                      : isScrolled ? 'text-gray-400 hover:bg-gray-100' : 'text-white/50 hover:bg-white/10'
-                  } ${isScrolled ? 'text-gray-700' : 'text-white'}`}
-                >
-                  {flag}
-                </button>
-              ))}
-            </div>
+          <div className="hidden lg:flex items-center gap-3">
             <div className="relative">
               <button
                 onClick={() => setLangOpen(!langOpen)}
@@ -127,20 +107,7 @@ export function Navbar({ onOpenDialog }: NavbarProps) {
             </Button>
           </div>
 
-          <div className="flex lg:hidden items-center gap-1">
-            <div className="flex items-center rounded-md overflow-hidden">
-              {REGIONS.map(({ code, flag }) => (
-                <button
-                  key={code}
-                  onClick={() => setRegion(code)}
-                  className={`px-1.5 py-1 text-xs ${
-                    region === code ? 'opacity-100' : 'opacity-40'
-                  }`}
-                >
-                  {flag}
-                </button>
-              ))}
-            </div>
+          <div className="flex lg:hidden items-center gap-2">
             <button
               onClick={() => setLangOpen(!langOpen)}
               className={`p-2 rounded-lg ${isScrolled ? 'text-gray-700' : 'text-white'}`}
