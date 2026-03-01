@@ -402,6 +402,7 @@ export const es: Translations = {
     resultBmi: 'Tu IMC',
     resultGoal: 'Objetivo',
     resultPlan: 'Plan recomendado',
+    resultDose: 'Dosis recomendada',
     resultCta: 'Hablar con Especialista',
     resultWhatsApp: 'Quiero saber más sobre el tratamiento personalizado',
   },

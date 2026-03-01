@@ -220,6 +220,7 @@ export interface Translations {
     resultBmi: string;
     resultGoal: string;
     resultPlan: string;
+    resultDose: string;
     resultCta: string;
     resultWhatsApp: string;
   };

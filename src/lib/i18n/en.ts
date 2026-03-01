@@ -402,6 +402,7 @@ export const en: Translations = {
     resultBmi: 'Your BMI',
     resultGoal: 'Goal',
     resultPlan: 'Recommended plan',
+    resultDose: 'Recommended dosage',
     resultCta: 'Talk to a Specialist',
     resultWhatsApp: 'I want to know more about personalized treatment',
   },
