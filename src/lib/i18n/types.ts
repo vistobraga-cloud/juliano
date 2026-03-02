@@ -192,9 +192,6 @@ export interface Translations {
     nameLabel: string;
     namePlaceholder: string;
     nameError: string;
-    phoneLabel: string;
-    phonePlaceholder: string;
-    phoneError: string;
     objectiveLabel: string;
     objectivePlaceholder: string;
     objectiveError: string;
@@ -262,6 +259,6 @@ export interface Translations {
   // WhatsApp messages
   whatsapp: {
     defaultMessage: string;
-    leadMessage: (name: string, phone: string, objective: string) => string;
+    leadMessage: (name: string, objective: string, brand: string) => string;
   };
 }

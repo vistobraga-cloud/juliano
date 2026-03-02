@@ -335,10 +335,7 @@ export const pt: Translations = {
       'Preencha seus dados e te redirecionamos para o WhatsApp do especialista com sua mensagem já pronta.',
     nameLabel: 'Nome completo *',
     namePlaceholder: 'Seu nome completo',
-    nameError: 'Informe seu nome completo',
-    phoneLabel: 'Telefone / WhatsApp *',
-    phonePlaceholder: '(11) 99999-9999',
-    phoneError: 'Telefone inválido',
+    nameError: 'Nome deve ter pelo menos 3 caracteres',
     objectiveLabel: 'Objetivo do tratamento *',
     objectivePlaceholder: 'Selecione uma opção',
     objectiveError: 'Selecione um objetivo',
@@ -441,7 +438,7 @@ export const pt: Translations = {
   whatsapp: {
     defaultMessage:
       'Olá! Tenho interesse no tratamento com Tirzepatide (Mounjaro). Pode me ajudar?',
-    leadMessage: (name, phone, objective) =>
-      `Olá! Me chamo *${name}*, meu telefone é *${phone}*.\n\nTenho interesse em: *${objective}*\n\nPoderia me ajudar com informações sobre o tratamento com Tirzepatide (Mounjaro)?`,
+    leadMessage: (name, objective, brand) =>
+      `Olá! Me chamo *${name}*.\n\nTenho interesse em: *${objective}*\n\nGostaria de informações sobre o tratamento com *Tirzepatide* pela *${brand}*. Qual dosagem seria indicada para o meu caso?`,
   },
 };

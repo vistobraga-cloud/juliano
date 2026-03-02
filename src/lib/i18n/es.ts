@@ -336,9 +336,6 @@ export const es: Translations = {
     nameLabel: 'Nombre completo *',
     namePlaceholder: 'Su nombre completo',
     nameError: 'Ingrese su nombre completo',
-    phoneLabel: 'Teléfono / WhatsApp *',
-    phonePlaceholder: '+1 (555) 123-4567',
-    phoneError: 'Teléfono inválido',
     objectiveLabel: 'Objetivo del tratamiento *',
     objectivePlaceholder: 'Seleccione una opción',
     objectiveError: 'Seleccione un objetivo',
@@ -441,7 +438,7 @@ export const es: Translations = {
   whatsapp: {
     defaultMessage:
       '¡Hola! Estoy interesado en el tratamiento con Tirzepatide (Mounjaro). ¿Pueden ayudarme?',
-    leadMessage: (name, phone, objective) =>
-      `¡Hola! Me llamo *${name}*, mi teléfono es *${phone}*.\n\nEstoy interesado en: *${objective}*\n\n¿Podrían ayudarme con información sobre el tratamiento con Tirzepatide (Mounjaro)?`,
+    leadMessage: (name, objective, brand) =>
+      `¡Hola! Me llamo *${name}*.\n\nEstoy interesado en: *${objective}*\n\nMe gustaría información sobre el tratamiento con *Tirzepatide* en *${brand}*. ¿Qué dosis sería indicada para mi caso?`,
   },
 };
