@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, MessageCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const WHATSAPP_LINK = 'https://wa.me/34951000000?text=Olá!%20Quero%20um%20orçamento%20gratuito%20em%20Málaga';
+import { WHATSAPP_LINK } from '@/lib/site';
 
 const NAV_LINKS = [
   { label: 'Serviços', href: '#servicos' },
+  { label: 'Como Funciona', href: '#como-funciona' },
   { label: 'Zona', href: '#zona' },
   { label: 'Depoimentos', href: '#depoimentos' },
   { label: 'FAQ', href: '#faq' },

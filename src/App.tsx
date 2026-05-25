@@ -1,6 +1,7 @@
 import Header from './sections/Header';
 import Hero from './sections/Hero';
 import Servicos from './sections/Servicos';
+import ComoFunciona from './sections/ComoFunciona';
 import PorQueNosEscolher from './sections/PorQueNosEscolher';
 import ZonaAtendimento from './sections/ZonaAtendimento';
 import Depoimentos from './sections/Depoimentos';
@@ -16,6 +17,7 @@ export default function App() {
       <main>
         <Hero />
         <Servicos />
+        <ComoFunciona />
         <PorQueNosEscolher />
         <ZonaAtendimento />
         <Depoimentos />

@@ -1,20 +1,20 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, Phone, Mail, MapPin, Clock } from 'lucide-react';
-
-const WHATSAPP_LINK = 'https://wa.me/34951000000?text=Olá!%20Quero%20um%20orçamento%20gratuito%20em%20Málaga';
+import { SITE, WHATSAPP_LINK } from '@/lib/site';
 
 const quickLinks = [
   { label: 'Serviços', href: '#servicos' },
+  { label: 'Como Funciona', href: '#como-funciona' },
   { label: 'Zona de Atendimento', href: '#zona' },
   { label: 'Depoimentos', href: '#depoimentos' },
   { label: 'FAQ', href: '#faq' },
 ];
 
 const contactInfo = [
-  { icon: Phone, text: '+34 951 000 000', href: 'tel:+34951000000' },
-  { icon: Mail, text: 'info@malagapro.es', href: 'mailto:info@malagapro.es' },
-  { icon: MapPin, text: 'Málaga, Andaluzia, Espanha', href: null },
-  { icon: Clock, text: 'Seg-Sáb: 8h às 20h', href: null },
+  { icon: Phone, text: SITE.phoneDisplay, href: SITE.phoneTel },
+  { icon: Mail, text: SITE.email, href: `mailto:${SITE.email}` },
+  { icon: MapPin, text: 'Málaga, Andaluzia, Espanha', href: null as string | null },
+  { icon: Clock, text: SITE.hours.weekdays, href: null as string | null },
 ];
 
 export default function Footer() {

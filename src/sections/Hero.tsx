@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, Phone, Clock, Shield, Sparkles } from 'lucide-react';
-
-const WHATSAPP_LINK = 'https://wa.me/34951000000?text=Olá!%20Quero%20um%20orçamento%20gratuito%20em%20Málaga';
+import { SITE, WHATSAPP_LINK } from '@/lib/site';
 
 const containerVariants = {
   hidden: {},
@@ -87,11 +86,11 @@ export default function Hero() {
         {/* Phone Line */}
         <motion.div variants={itemVariants} className="mt-4">
           <a
-            href="tel:+34951000000"
+            href={SITE.phoneTel}
             className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors duration-200"
           >
             <Phone className="w-3.5 h-3.5" />
-            Ou ligue: +34 951 000 000
+            Ou ligue: {SITE.phoneDisplay}
           </a>
         </motion.div>
 

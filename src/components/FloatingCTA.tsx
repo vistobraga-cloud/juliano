@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { MessageCircle } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
-
-const WHATSAPP_LINK = 'https://wa.me/34951000000?text=Olá!%20Quero%20um%20orçamento%20gratuito%20em%20Málaga';
+import { WHATSAPP_LINK } from '@/lib/site';
 
 export default function FloatingCTA() {
   const [showTooltip, setShowTooltip] = useState(false);

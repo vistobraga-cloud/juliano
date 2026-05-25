@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { MessageCircle, Check } from 'lucide-react';
-
-const WHATSAPP_LINK = 'https://wa.me/34951000000?text=Olá!%20Quero%20um%20orçamento%20gratuito%20em%20Málaga';
+import { WHATSAPP_LINK } from '@/lib/site';
 
 export default function CTABanner() {
   return (
