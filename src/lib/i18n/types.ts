@@ -220,6 +220,7 @@ export interface Translations {
     resultDose: string;
     resultCta: string;
     resultWhatsApp: string;
+    resultWhatsAppBtn: string;
   };
 
   // BMI Calculator

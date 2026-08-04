@@ -213,7 +213,7 @@ export function QuizSection({ onOpenDialog }: QuizSectionProps) {
                         className="w-full font-semibold py-4 text-sm"
                       >
                         <MessageCircle className="w-4 h-4 mr-2" />
-                        {t.quiz.resultWhatsApp}
+                        {t.quiz.resultWhatsAppBtn}
                       </Button>
                     </div>
                   </div>

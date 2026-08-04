@@ -15,10 +15,12 @@ export function useCountdown() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
+    let id: ReturnType<typeof setInterval>;
     const tick = () => {
       const diff = target.getTime() - Date.now();
       if (diff <= 0) {
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        clearInterval(id);
         return;
       }
       setTimeLeft({
@@ -29,7 +31,7 @@ export function useCountdown() {
       });
     };
     tick();
-    const id = setInterval(tick, 1000);
+    id = setInterval(tick, 1000);
     return () => clearInterval(id);
   }, [target]);
 

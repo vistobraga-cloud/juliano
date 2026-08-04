@@ -402,6 +402,7 @@ export const pt: Translations = {
     resultDose: 'Dosagem recomendada',
     resultCta: 'Falar com Especialista',
     resultWhatsApp: 'Quero saber mais sobre o tratamento personalizado',
+    resultWhatsAppBtn: 'Falar pelo WhatsApp',
   },
 
   bmi: {

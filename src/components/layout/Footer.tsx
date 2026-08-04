@@ -1,4 +1,4 @@
-import { Syringe, Phone, MessageCircle, Instagram, Facebook, Mail } from 'lucide-react';
+import { Syringe, Phone, MessageCircle, Instagram, Facebook } from 'lucide-react';
 import { openWhatsApp } from '@/lib/whatsapp';
 import { useTranslation } from '@/lib/i18n';
 
@@ -96,8 +96,8 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
-                  <Mail className="w-4 h-4 text-purple-400 flex-shrink-0" />
-                  @izampieri.medspa
+                  <Instagram className="w-4 h-4 text-purple-400 flex-shrink-0" />
+                  @zampieri.medspa
                 </a>
               </li>
             </ul>

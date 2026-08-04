@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Syringe, Globe } from 'lucide-react';
 import { useTranslation, type Language } from '@/lib/i18n';
@@ -18,12 +18,28 @@ export function Navbar({ onOpenDialog }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
+  const langDesktopRef = useRef<HTMLDivElement>(null);
+  const langMobileRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  useEffect(() => {
+    if (!langOpen) return;
+    const handle = (e: MouseEvent) => {
+      if (
+        !langDesktopRef.current?.contains(e.target as Node) &&
+        !langMobileRef.current?.contains(e.target as Node)
+      ) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handle);
+    return () => document.removeEventListener('mousedown', handle);
+  }, [langOpen]);
 
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -71,7 +87,7 @@ export function Navbar({ onOpenDialog }: NavbarProps) {
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
-            <div className="relative">
+            <div className="relative" ref={langDesktopRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
@@ -108,6 +124,7 @@ export function Navbar({ onOpenDialog }: NavbarProps) {
           </div>
 
           <div className="flex lg:hidden items-center gap-2">
+            <div className="relative" ref={langMobileRef}>
             <button
               onClick={() => setLangOpen(!langOpen)}
               className={`p-2 rounded-lg ${isScrolled ? 'text-gray-700' : 'text-white'}`}
@@ -129,6 +146,7 @@ export function Navbar({ onOpenDialog }: NavbarProps) {
                 ))}
               </div>
             )}
+            </div>
             <button onClick={() => setMobileOpen(!mobileOpen)}>
               {mobileOpen ? (
                 <X className={`w-6 h-6 ${isScrolled ? 'text-gray-900' : 'text-white'}`} />
